@@ -1,0 +1,62 @@
+
+.admin-avatar-container {
+  position: relative;
+}
+
+.admin-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #198754;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.admin-avatar:hover {
+  transform: scale(1.05);
+}
+
+.admin-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  z-index: 1000;
+}
+
+.admin-menu-header {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.admin-email {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.admin-menu-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.admin-menu-item:hover {
+  background: #f8f9fa;
+  color: #198754;
+}
+
+.admin-menu-footer {
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  color: #6c757d;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}

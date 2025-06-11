@@ -1,0 +1,328 @@
+.navbar {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(46, 109, 74, 0.1);
+  transition: var(--transition);
+  z-index: 1000;
+  padding: 0.75rem 0;
+}
+
+.navbar-top {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-light);
+}
+
+.navbar-scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-medium);
+  padding: 0.5rem 0;
+}
+
+/* Logo Styles */
+.brand-modern {
+  padding: 0;
+  margin-right: 2rem;
+  transition: var(--transition);
+}
+
+.brand-modern:hover {
+  transform: scale(1.02);
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+  transition: var(--transition);
+}
+
+.navbar-scrolled .logo-img {
+  height: 40px;
+}
+
+/* Navigation Links */
+.nav-modern {
+  gap: 1rem;
+}
+
+.nav-link-modern {
+  position: relative;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 8px;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.nav-text {
+  position: relative;
+  z-index: 2;
+}
+
+.nav-link-modern::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
+  border-radius: 8px;
+  transition: var(--transition);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+}
+
+.nav-link-modern:hover::before,
+.nav-link-modern.active::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+.nav-link-modern:hover {
+  color: var(--primary-color) !important;
+  transform: translateY(-1px);
+}
+
+.nav-link-modern.active {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.nav-link-modern.active .nav-text {
+  color: var(--primary-color);
+}
+
+/* Custom Hamburger Menu */
+.custom-toggler {
+  border: none;
+  padding: 0.5rem;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.custom-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.custom-toggler:hover {
+  background: var(--accent-color);
+}
+
+.toggler-line {
+  width: 22px;
+  height: 2px;
+  background: var(--primary-color);
+  margin: 2px 0;
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+.toggler-open .toggler-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggler-open .toggler-line:nth-child(2) {
+  opacity: 0;
+}
+
+.toggler-open .toggler-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Modern Button Styles */
+.navbar-auth-modern {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-modern {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0.625rem 1.5rem;
+  border-radius: var(--border-radius);
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-modern span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-primary-modern {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(46, 109, 74, 0.2);
+}
+
+.btn-primary-modern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--primary-light),
+    var(--primary-color)
+  );
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.btn-primary-modern:hover::before {
+  left: 0;
+}
+
+.btn-primary-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(46, 109, 74, 0.3);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.btn-outline-modern {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-outline-modern:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(46, 109, 74, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(46, 109, 74, 0.1);
+  }
+
+  .navbar-collapse.show {
+    animation: slideDown 0.3s ease;
+  }
+
+  .nav-modern {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-link-modern {
+    padding: 1rem !important;
+    border-radius: var(--border-radius);
+    text-align: left;
+  }
+
+  .navbar-auth-modern {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-modern {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .logo-img {
+    height: 38px;
+  }
+
+  .navbar-scrolled .logo-img {
+    height: 35px;
+  }
+}
+
+/* Smooth Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility Classes */
+.transition-all {
+  transition: var(--transition);
+}
+
+/* Focus States for Accessibility */
+.nav-link-modern:focus,
+.btn-modern:focus,
+.custom-toggler:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .navbar {
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .nav-link-modern {
+    border: 1px solid transparent;
+  }
+
+  .nav-link-modern:hover,
+  .nav-link-modern.active {
+    border-color: var(--primary-color);
+  }
+}

@@ -1,0 +1,84 @@
+/* components/common/SideNavAdmin/SideNavAdmin.css */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.side-nav.open {
+  left: 0;
+}
+
+.side-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.side-nav-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.side-nav-menu {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.side-nav-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  color: #495057;
+  text-decoration: none;
+  gap: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.side-nav-link:hover {
+  background: #f8f9fa;
+  color: #198754;
+}
+
+.side-nav-icon {
+  font-size: 1.25rem;
+  min-width: 24px;
+}
+

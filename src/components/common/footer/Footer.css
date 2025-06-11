@@ -1,0 +1,82 @@
+/* General footer styling */
+.footer {
+  background-color: #6c757d; /* Matches the gray background */
+  color: #fff; /* White text color */
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #adb5bd; /* Lighter gray for hover effect */
+}
+
+/* Section headers */
+.footer h5 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Social media icons */
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer .social-icons i {
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.footer .social-icons i:hover {
+  transform: scale(1.1);
+}
+
+/* Links lists */
+.footer .list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+
+/* App download section */
+.footer .app-download img {
+  max-width: 120px;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.footer .app-download img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .col {
+    margin-bottom: 20px;
+  }
+
+  .footer .app-download img {
+    max-width: 100px;
+  }
+}

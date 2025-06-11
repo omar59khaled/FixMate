@@ -1,0 +1,238 @@
+/* ManageUsersPage.css */
+
+.manage-users {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Card Styles */
+.card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Table Styles */
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  color: #495057;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.table td {
+  vertical-align: middle;
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+/* Badge Styles */
+.badge {
+  padding: 0.5em 0.8em;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Button Styles */
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary {
+  border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-1px);
+}
+
+.btn-outline-danger {
+  border-width: 2px;
+}
+
+.btn-outline-danger:hover {
+  transform: translateY(-1px);
+}
+
+/* Search Input Styles */
+.input-group {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-group-text {
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.form-control {
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+/* Select Styles */
+.form-select {
+  padding: 0.75rem 1rem;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.form-select:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: 2px solid #f8f9fa;
+  padding: 1.5rem;
+}
+
+.modal-header .modal-title {
+  font-weight: 600;
+  color: #212529;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  border-top: 2px solid #f8f9fa;
+  padding: 1.5rem;
+}
+
+/* Form Styles in Modal */
+.modal .form-label {
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.modal .form-control,
+.modal .form-select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.modal .form-control:focus,
+.modal .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.1);
+}
+
+.modal .form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.2em;
+  cursor: pointer;
+}
+
+.modal .form-check-label {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* Loading Spinner Styles */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Alert Styles */
+.alert {
+  border-radius: 8px;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .table thead th {
+    font-size: 0.8rem;
+  }
+  
+  .table td {
+    font-size: 0.9rem;
+  }
+  
+  .btn-sm {
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 1rem;
+  }
+}
+
+/* Animation for Status Changes */
+.badge {
+  transition: background-color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+.table-responsive::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

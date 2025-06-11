@@ -1,0 +1,99 @@
+/* ManageServices.css */
+.manage-services {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+   
+  }
+  
+  .service-image {
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .table th {
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .table td .g {
+    vertical-align: middle;
+  }
+  
+  .modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .btn-icon {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  
+  /* Custom scrollbar */
+  .modal-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .modal-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  .modal-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .admin-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    z-index: 998;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #495057;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .menu-toggle:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+  }
+  
+  .admin-content {
+    margin-top: 64px;
+    padding: 1.5rem;
+    flex-grow: 1;
+  }

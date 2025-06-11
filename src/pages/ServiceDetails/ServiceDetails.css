@@ -1,0 +1,67 @@
+.service-details-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.service-details-card .service-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.service-details-card .service-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.service-details-card .card-body {
+  padding: 2rem;
+}
+
+.service-description {
+  white-space: pre-line;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+.service-category-badge {
+  display: inline-block;
+  background-color: #e9f7ef;
+  color: #28a745;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.book-service-btn {
+  padding: 0.75rem 2rem;
+  background-color: #48a268;
+}
+
+.no-scroll {
+  overflow-y: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
+@media (max-width: 768px) {
+  .service-details-card .service-image {
+    height: 250px;
+  }
+
+  .service-details-card .service-title {
+    font-size: 1.5rem;
+  }
+
+  .service-details-card .card-body {
+    padding: 1.5rem;
+  }
+}
+.request-btnn {
+  background-color: #48a26760;
+}

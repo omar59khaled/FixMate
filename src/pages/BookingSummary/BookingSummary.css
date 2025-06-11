@@ -1,0 +1,58 @@
+.booking-confirmation-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.booking-confirmation-card {
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.success-icon {
+  color: #28a745;
+  margin-bottom: 1.5rem;
+}
+
+.booking-details {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.booking-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.booking-actions {
+  margin-top: 2rem;
+}
+.no-scroll {
+  overflow-y: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+@media (max-width: 576px) {
+  .booking-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .booking-actions button,
+  .booking-actions a {
+    width: 100%;
+    margin: 5px 0 !important;
+  }
+}
+
+.booking-price {
+  font-size: 22px;
+}

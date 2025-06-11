@@ -1,0 +1,61 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  background-color:rgb(123,161,138); /* Light background */
+}
+
+.auth-container {
+  text-align: center;
+  padding: 40px;
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.auth-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.signup-btn {
+  background-color: #2E6D4A;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #1e6b90;
+}
+
+.login-btn {
+  background-color: #f2f5f7;
+  color: #333;
+}
+
+.login-btn:hover {
+  background-color: #d9dde1;
+}

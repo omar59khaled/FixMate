@@ -1,0 +1,87 @@
+/* ServiceStyles.css */
+
+/* Hero Section */
+.services-hero {
+  padding: 4rem 0;
+  color: var(--white);
+  background-color: #48a26760;
+}
+
+.services-hero h1 {
+  font-weight: 600;
+  color: var(--white);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.services-hero p {
+  color: var(--white);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Service Cards */
+.service-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.service-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-title {
+  color: var(--primary-green);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-description {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.service-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.service-button:hover {
+  background-color: var(--primary-green-dark);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 3rem 0;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-hero {
+    padding: 2rem 0;
+  }
+
+  .service-image {
+    height: 180px;
+  }
+}
