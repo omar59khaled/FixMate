@@ -1,6 +1,7 @@
 /* Prevents horizontal scrolling */
 body,
 html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -11,9 +12,9 @@ html {
 
 /* CSS Variables for consistent theming */
 :root {
-  --primary-color: #2e6d4a;
-  --primary-light: #48a268;
-  --primary-dark: #1b4a32;
+  --primary-color: #307240;
+  --primary-light: #7be0aa;
+  --primary-dark: #1c4524;
   --secondary-color: #f8faf9;
   --accent-color: #e8f5e8;
   --text-primary: #1a1a1a;
@@ -61,8 +62,9 @@ html {
 }
 
 .navbar .logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
+  
 }
 
 .navbar .theme-toggle {
@@ -84,7 +86,7 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar .logo {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .navbar .icon {
