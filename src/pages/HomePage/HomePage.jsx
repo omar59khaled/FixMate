@@ -20,6 +20,7 @@ import assembly from '../../assets/images/assembly.jpg'
 import assembly2 from '../../assets/images/the-best-tv-mounts.jpg'
 import assembly3 from '../../assets/images/roof_roofing_asphalt_shingle_repair_replacement_new_roofer_remove_removal_shutterstock_134922203.webp'
 import assembly4 from '../../assets/images/home repairs.webp'
+import { Link2 } from "lucide-react";
 
 const services = [
   {
@@ -111,7 +112,7 @@ const HomeServices = () => {
                   From assembly to repairs, we've got you covered.
                 </p>
 
-                {/* Search Bar */}
+                {/* Search Bar
                 <div className="search-section">
                   <form onSubmit={handleSearchSubmit} className="search-form">
                     <div className="search-input-container">
@@ -128,7 +129,7 @@ const HomeServices = () => {
                       </button>
                     </div>
                   </form>
-                </div>
+                </div> */}
 
                 {/* Image Classification Button */}
                 <div className="upload-section ms-0">
@@ -153,7 +154,7 @@ const HomeServices = () => {
           <div className="row mt-0 pt-0">
             <div className="col-12 mt-0 pt-0">
               <div className="section-header text-center mb-5 mt-0 pt-0">
-                <h2 className="section-title">Our Services</h2>
+                <h1 className="section-title">Our Services</h1>
                 <p className="section-subtitle">Choose from our wide range of professional home services</p>
               </div>
 
@@ -192,7 +193,7 @@ const HomeServices = () => {
                         <img 
                           src={selectedService.image} 
                           alt={selectedService.name} 
-                          className="service-image" 
+                          className="service-imag" 
                         />
                         <div className="image-overlay">
                           <div className="service-badge">
@@ -219,12 +220,18 @@ const HomeServices = () => {
                         </div>
 
                         <div className="cta-section">
-                          <button className="btn btn-primary-modern btn-lg">
-                            Book Now
-                          </button>
-                          <button className="btn btn-outline-modern btn-lg">
+                          <Link to="/services">
+            <button className="btn btn-primary-modern btn-lg">
+                         Book Now
+                  </button >
+          </Link>
+                 <Link to="/services">
+            <button className="btn btn-outline-modern btn-lg">
                             Learn More
                           </button>
+          </Link>   
+                          
+                          
                         </div>
                       </div>
                     </div>
