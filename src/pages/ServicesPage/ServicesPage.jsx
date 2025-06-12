@@ -115,33 +115,37 @@ const ServicesPage = () => {
           <p className="lead text-center text-dark mb-5">Discover our range of professional services designed to meet your needs</p>
           
         
-          <Row className="mb-4 justify-content-center">
-            <Col md={6} lg={4}>
-              <InputGroup>
-                <Form.Control
-                  placeholder="Search services..."
-                  value={searchTerm}
-                  onChange={handleSearch}
-                  aria-label="Search services"
-                />
-                <Button variant="outline-success text-dark">
-                  <Search />
-                </Button>
-              </InputGroup>
-            </Col>
-            <Col md={4} lg={3}>
-              <Form.Select 
-                value={selectedCategory} 
-                onChange={handleCategoryChange}
-                aria-label="Select service category"
-              >
-                <option value="">All Categories</option>
-                {categories.map((category, index) => (
-                  <option key={index} value={category}>{category}</option>
-                ))}
-              </Form.Select>
-            </Col>
-          </Row>
+  <div className="search-filter-section">   
+  <Row className="mb-4 justify-content-center">     
+    <Col xs={12} md={6} lg={4}>  {/* Changed from sm={6} to xs={12} */}
+      <InputGroup className="search-input-group">         
+        <Form.Control           
+          className="search-input"           
+          placeholder="Search services..."           
+          value={searchTerm}           
+          onChange={handleSearch}           
+          aria-label="Search services"         
+        />         
+        <Button className="search-btn">           
+          <Search className="search-icon" />         
+        </Button>       
+      </InputGroup>     
+    </Col>     
+    <Col xs={12} md={6} lg={4}>  {/* Changed from sm={6} to xs={12} */}
+      <Form.Select          
+        className="category-select"         
+        value={selectedCategory}          
+        onChange={handleCategoryChange}         
+        aria-label="Select service category"       
+      >         
+        <option value="">All Categories</option>         
+        {categories.map((category, index) => (           
+          <option key={index} value={category}>{category}</option>         
+        ))}       
+      </Form.Select>     
+    </Col>   
+  </Row> 
+</div>
         </Container>
       </div>
 
