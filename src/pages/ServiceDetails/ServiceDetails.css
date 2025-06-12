@@ -1,24 +1,28 @@
-.service-details-card {
+.service-detail-card {
+  position: relative;
+  display: flex;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin: 2rem auto; 
+  width: 500px;
+  max-width: 90%; 
 }
 
 .service-details-card .service-image {
   width: 100%;
-  height: 400px;
+  height: 270px;
   object-fit: cover;
 }
 
-.service-details-card .service-title {
+.service-detail-card .service-title {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #333;
 }
 
-.service-details-card .card-body {
+.service-detail-card .card-body {
   padding: 2rem;
 }
 
@@ -49,19 +53,48 @@
   height: auto !important;
   max-height: none !important;
 }
+
 @media (max-width: 768px) {
-  .service-details-card .service-image {
+  .service-detail-card {
+    width: 90%; 
+    margin: 1rem auto; 
+  }
+  
+  .service-detail-card .service-imag {
     height: 250px;
   }
 
-  .service-details-card .service-title {
+  .service-detail-card .service-title {
     font-size: 1.5rem;
   }
 
-  .service-details-card .card-body {
+  .service-detail-card .card-body {
     padding: 1.5rem;
   }
 }
+
 .request-btnn {
-  background-color: #48a26760;
+  background-color: #278a4a; 
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.request-btnn:hover {
+  background-color: #43c76f; 
+}
+
+.request-btnn:focus {
+  outline: 2px solid #35b963;
+  outline-offset: 2px;
+}
+
+.request-btnn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
